@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style/style.scss">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <div class="logo__img">
+            </div>
+            <div class="logo__title">
+              Testtask
+            </div>
+          </div>
+          <div class="header__btns">
+            <div class="header__btns_first">
+              <a href="#" c>
+                Users
+              </a>
+            </div>
+            <div class="header__btns_second">
+              <a href="/register/index.html">
+                Sign up
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section class="introduction">
+      <div class="container">
+        <div class="introduction__title">
+          Test assignment for front-end developer
+        </div>
+        <div class="introduction__subtitle">
+          <p> What defines a good front-end developer is one that
+            has skilled knowledge of HTML, CSS, JS with a vast
+            understanding of User design thinking as they'll be
+            building web interfaces with accessibility in mind.
+            They should also be excited to learn, as the world of
+            Front-End Development keeps evolving.</p>
+        </div>
+        <div class="introduction__btn">
+          <a href="/register/index.html">
+            Sign up
+          </a>
+        </div>
+    
+      </div>
+    </section>
+    
+    <section id="users" class="users">
+      <div class="container">
+        <div class="users__title">
+          <h2>
+            Working with GET request
+          </h2>
+        </div>
+
+        <div  class="users__cards">
+          <div id="users__card" class="users__grid">
+            <div  class="users__card">
+              <div class="users__img">
+                <img src="images/salvador.png" alt="salvador">
+              </div>
+              <div class="users__name">
+                Salvador Stewart Flynn Thomas Salva Salve...
+              </div>
+              <div class="users__contacts">
+                <p>Leading specialist of the department <span>of cent</span>... </p>
+                <p> frontend_develop@gmail.com</p>
+                <p>+38 (098) 278 44 24</p>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        <div class="users__more">
+          <button class="users__more-btn">
+            Show more
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="btn__read">
+    </section>
+    
+    <section class="form">
+      <div class="container">
+        <div class="title">
+          Working with POST request
+        </div>
+        <div class="register">
+          <form id="form" onsubmit="return false">
+            <div>
+              <input class="input_js username _req" name="name" placeholder="Your name" tabindex="1"
+                type="text">
+            </div>
+            <div>
+              <input class="input_js email _req" name="email" placeholder="Email" tabindex="2" type="email">
+            </div>
+            <div>
+              <input id="tel" class="input_js tel _req" name="phone" placeholder="Phone" tabindex="3" 
+                type="tel" pattern="[0-9]{10}">
+            </div>
+            <div class="tel_p">
+              <p>
+                +38 (XXX) XXX - XX - XX
+              </p>
+            </div>
+            <div class="radio">
+              <p class="title_radio">
+                Select your position
+              </p>
+              <div class="radio__list">
+                <p><input class="radio_del _req radio" type="radio" name="role" value="frontend" checked>
+                  Frontend developer</p>
+                <p><input class="radio_backand _req radio" type="radio" name="role" value="backand">
+                  Backend developer</p>
+                <p><input class="radio_designer _req radio" type="radio" name="role" value="designer">
+                  Designer</p>
+                <p><input class="radio_qa _req radio" type="radio" name="role" value="qa"> QA</p>
+              </div>
+            </div>
+            <div class="add__file _req">
+              <label class="label">
+                <input accept=".jpg, .png" type="file" id="photo">
+                <p class="name__btn">Upload</p>
+              </label>
+              <p class="file__title">
+                Upload your photo
+              </p>
+            </div>
+            <button class="finish__btn" type="submit">
+              Sign up
+            </button>
+        </form>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script type="module" src="/scripts/main.js"></script>
+</html>
